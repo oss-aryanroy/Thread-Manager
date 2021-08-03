@@ -137,7 +137,6 @@ client.help_command = MyHelp()
 @client.event
 async def on_ready():
     try:
-        client.guys = client.get_guild(853239200002736161)
         info = await client.application_info()
         print('----------------------------')
         print(f'{client.user} Is Now Online')
