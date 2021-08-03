@@ -150,12 +150,6 @@ async def on_ready():
     except Exception as err:
         print(err)
 
-os.environ["JISHAKU_NO_DM_TRACEBACK"] = "True"
-os.environ["JISHAKU_NO_UNDERSCORE"] = "True"
-os.environ["JISHAKU_HIDE"] = "True"
-os.environ["JISHAKU_RETAIN"] = "True"
-client.load_extension("jishaku")
-
 
 @client.command()
 async def setprefix(ctx, prefix: str):
